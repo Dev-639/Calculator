@@ -3,10 +3,7 @@ let buttons = document.querySelectorAll('.button');
 let audio = document.querySelector('#audio');
 let music = new Audio('bunshin_seal.mp3');
 Array.from(buttons).forEach((bt) => {
-    bt.addEventListener('click', (e) => {
-        if(e.target.innerHTML=='&#10008;'){
-            console.log(e.target.innerHTML);
-        }
+    bt.addEventListener('click', (e) => { 
         if (e.target.innerHTML == '=') {
             if (string != "") {
                 try {
